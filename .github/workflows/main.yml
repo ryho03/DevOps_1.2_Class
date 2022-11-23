@@ -14,4 +14,4 @@ jobs:
     - run: cat New_File
     - run: ls -a
     - run: pwd
-    - run: echo "$USER"
+    - run: echo $USER
