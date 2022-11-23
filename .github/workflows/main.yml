@@ -14,4 +14,4 @@ jobs:
     - run: cat New_File
     - run: ls -a
     - run: pwd
-    - run: git config user.name
+    - run: echo git config user.name
