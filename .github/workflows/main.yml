@@ -9,5 +9,9 @@ jobs:
     # What do we want this machine to do?
     steps:
     - run: echo "Hello World!"
+    - run: touch New_File
+    - run: echo "I hope this works" > New_File
+    - run: cat New_File
     - run: ls -a
     - run: pwd
+    - run: cat user.name
