@@ -15,3 +15,12 @@ jobs:
     - run: ls -a
     - run: pwd
     - run: echo $USER
+    - run: git clone https://github.com/ryho03/DevOps_1.2_Class
+    - run: cat DevOps_1.2_Class/README.md
+
+  better_action:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3 # Checking out and using the repo assigned to this workflow
+    - run: chmod +x cool_script.sh  # Granting permission access to our script
+    - run: ./cool_script.sh # Running our script
